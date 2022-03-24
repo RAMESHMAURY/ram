@@ -1,0 +1,558 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>E-College</title>
+	<!----css file link-->
+	<link rel="stylesheet" type="text/css" href="css/java_programming.css">
+
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+	<!-- jQuery library -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<!-- Latest compiled JavaScript -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+
+	<!----Linking google fonts-->
+	<link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">
+
+	<!----font-awsome start-->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+
+
+	<!-- <style type="text/css">
+		.bgcolor {
+			background: rgba(0, 0, 0, 0.1);
+
+
+		}
+
+		body {
+			background: #FC354C;
+			/* fallback for old browsers */
+			background: -webkit-linear-gradient(to right, #0ABFBC, #FC354C);
+			/* Chrome 10-25, Safari 5.1-6 */
+			background: linear-gradient(to right, #0ABFBC, #FC354C);
+			/* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+			color: white;
+		}
+
+		.navbar {
+			background: #C04848;
+			/* fallback for old browsers */
+			background: -webkit-linear-gradient(to right, #480048, #C04848);
+			/* Chrome 10-25, Safari 5.1-6 */
+			background: linear-gradient(to right, #480048, #C04848);
+			/* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+		}
+	</style> -->
+    <style type="text/css">
+    @import url(https://fonts.googleapis.com/css?family=Open+Sans:400,500,300,700);
+
+* {
+  font-family: Open Sans;
+}
+
+section {
+  width: 100%;
+  background-color:  #34495e;
+  display: inline-block;
+  height: 50vh;
+  text-align: center;
+  font-size: 22px;
+  font-weight: 700;
+  text-decoration: underline;
+}
+
+.footer-distributed{
+	background: #34495e;
+	box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
+	box-sizing: border-box;
+	width: 100%;
+	text-align: left;
+	font: bold 16px sans-serif;
+	padding: 55px 50px;
+}
+
+.footer-distributed .footer-left,
+.footer-distributed .footer-center,
+.footer-distributed .footer-right{
+	display: inline-block;
+	vertical-align: top;
+}
+
+/* Footer left */
+
+.footer-distributed .footer-left{
+	width: 40%;
+}
+
+/* The company logo */
+
+.footer-distributed h3{
+	color:  #ffffff;
+	font: normal 36px 'Open Sans', cursive;
+	margin: 0;
+}
+
+.footer-distributed h3 span{
+	color:  lightseagreen;
+}
+
+/* Footer links */
+
+.footer-distributed .footer-links{
+	color:  #ffffff;
+	margin: 20px 0 12px;
+	padding: 0;
+}
+
+.footer-distributed .footer-links a{
+	display:inline-block;
+	line-height: 1.8;
+  font-weight:400;
+	text-decoration: none;
+	color:  inherit;
+}
+
+.footer-distributed .footer-company-name{
+	color:  #222;
+	font-size: 14px;
+	font-weight: normal;
+	margin: 0;
+}
+
+/* Footer Center */
+
+.footer-distributed .footer-center{
+	width: 35%;
+}
+
+.footer-distributed .footer-center i{
+	background-color:  #33383b;
+	color: #ffffff;
+	font-size: 25px;
+	width: 38px;
+	height: 38px;
+	border-radius: 50%;
+	text-align: center;
+	line-height: 42px;
+	margin: 10px 15px;
+	vertical-align: middle;
+}
+
+.footer-distributed .footer-center i.fa-envelope{
+	font-size: 17px;
+	line-height: 38px;
+}
+
+.footer-distributed .footer-center p{
+	display: inline-block;
+	color: #ffffff;
+  font-weight:400;
+	vertical-align: middle;
+	margin:0;
+}
+
+.footer-distributed .footer-center p span{
+	display:block;
+	font-weight: normal;
+	font-size:14px;
+	line-height:2;
+}
+
+.footer-distributed .footer-center p a{
+	color:  lightseagreen;
+	text-decoration: none;;
+}
+
+.footer-distributed .footer-links a:before {
+  content: "|";
+  font-weight:300;
+  font-size: 20px;
+  left: 0;
+  color: #fff;
+  display: inline-block;
+  padding-right: 5px;
+}
+
+.footer-distributed .footer-links .link-1:before {
+  content: none;
+}
+
+/* Footer Right */
+
+.footer-distributed .footer-right{
+	width: 20%;
+}
+
+.footer-distributed .footer-company-about{
+	line-height: 20px;
+	color:  #92999f;
+	font-size: 13px;
+	font-weight: normal;
+	margin: 0;
+}
+
+.footer-distributed .footer-company-about span{
+	display: block;
+	color:  #ffffff;
+	font-size: 14px;
+	font-weight: bold;
+	margin-bottom: 20px;
+}
+
+.footer-distributed .footer-icons{
+	margin-top: 25px;
+}
+
+.footer-distributed .footer-icons a{
+	display: inline-block;
+	width: 35px;
+	height: 35px;
+	cursor: pointer;
+	background-color:  #33383b;
+	border-radius: 2px;
+
+	font-size: 20px;
+	color: #ffffff;
+	text-align: center;
+	line-height: 35px;
+
+	margin-right: 3px;
+	margin-bottom: 5px;
+}
+
+/* If you don't want the footer to be responsive, remove these media queries */
+
+@media (max-width: 880px) {
+
+	.footer-distributed{
+		font: bold 14px sans-serif;
+	}
+
+	.footer-distributed .footer-left,
+	.footer-distributed .footer-center,
+	.footer-distributed .footer-right{
+		display: block;
+		width: 100%;
+		margin-bottom: 40px;
+		text-align: center;
+	}
+
+	.footer-distributed .footer-center i{
+		margin-left: 0;
+	}
+
+   
+}
+</style>
+</head>
+
+<body>
+
+
+	<!---Navigation Starts	----->
+
+
+	<nav class="navbar navbar-inverse navbar-fixed-top">
+		<div class="container">
+			<div class="navbar-header">
+				<!------Responsive Button---->
+				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navi">
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+
+
+				</button>
+
+				<h1 style="color: white;margin-top: 10px;" id="myhead">E-College</h1>
+			</div>
+			<div class="collapse navbar-collapse" id="navi">
+				<!------Navigation menus starts---->
+				<ul class="nav navbar-nav navbar-right">
+					<li> <a href="index.php">Home</a></li>
+					<li> <a href="#">Our Service</a></li>
+					<li> <a href="">Works</a></li>
+					<li> <a href="">Team</a></li>
+					<li> <a href="about_us.html">About</a></li>
+					<li> <a href="">Carrier</a></li>
+					<!-- <li> <a href="login.php" id="our-location" class="btn-success">Login</a></li> -->
+				</ul>
+				<!------Navigation menus ends---->
+			</div>
+		</div>
+	</nav>
+    <br>
+    <BR>
+    <br><br><br>
+    <div class="container-fluid servicebody" id="myservice_section">
+        <div class="service-are" id="service">
+            <div class="row">
+                <div class="col-xs-12">
+                    <div class="section-title text-center">
+                        <br>
+                      
+
+                       <br>
+                        <h2><b>ECE department Faculty Members.</b></h2>
+                        
+                       
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+ 
+    <div class="container">
+        <ul class="list-group">
+            <li class="list-group-item">
+                <h3><b>Dr. Vishal Awasthi (Head ECE)</b></h3>
+                <div class="row">
+                    <div class="col-sm-2 col-md-2 col-lg-2">
+                        <img src="http://csjmu.ac.in/wp-content/uploads/2021/06/vishal-awasthi-ece.jpeg" style="width: 180px; height: 180px;">
+                    </div>
+                    <div class="col-sm-10 col-md-10 col-lg-10">
+                       Ph.D. (AKTU Lucknow), M.Tech (HBTI Kanpur)
+                        <br> <b>Total Experience :</b>22 Years
+                        <br>
+                        <b>Areas of Specialization : </b>Digital Signal Processing
+                        and
+                        control systems.
+                        <br><b>Publications:</b> Journals:13 <br> Conference: 09S
+                    
+                    </div>
+                </div>
+            </li>
+            <li class="list-group-item">
+                <h3><b>Er. Niraj Kumar</b></h3>
+                <div class="row">
+                    <div class="col-sm-2 col-md-2 col-lg-2">
+                        <img src="http://csjmu.ac.in/wp-content/uploads/2021/06/Neeraj_ec.jpeg" style="width: 180px; height: 180px;">
+                    </div>
+                    <div class="col-sm-10 col-md-10 col-lg-10">
+                        Ph.D. (UTU Deharadun), M.Tech( MMMUT Gorakhpur)
+                        <br> <b>Total Experience :</b>17 Years
+                        <br>
+                        <b>Areas of Specialization : </b>Power Electronics / small grid technology
+                        and
+                        control systems.
+                        <br><b>Publications:</b> Books:2 <br> Journals:04 <br> Conference: 02
+                    </div>
+                </div>
+            </li>
+            <li class="list-group-item">
+                <h3><b>Er. Anand Kumar Gupta</b></h3>
+                <div class="row">
+                    <div class="col-sm-2 col-md-2 col-lg-2">
+                        <img src="http://csjmu.ac.in/wp-content/uploads/2021/06/anand-gupta.jpeg" style="width: 180px; height: 180px;">
+                    </div>
+                    <div class="col-sm-10 col-md-10 col-lg-10">
+                        Ph.D. (Pursuing), M.Tech (Gold Medallist)
+                        <br> <b>Total Experience :</b>23 Years
+                        <br>
+                        <b>Areas of Specialization : </b>Microelectronics & Embeded System 
+                        <br><b>Publications:</b> Journals:02<br> Conference: 07
+                    </div>
+                </div>
+            </li>
+            <li class="list-group-item">
+                <h3><b>Er. Atul Kumar Agnihotri</b></h3>
+                <div class="row">
+                    <div class="col-sm-2 col-md-2 col-lg-2">
+                        <img src="http://csjmu.ac.in/wp-content/uploads/2021/06/atul_ec.jpeg" style="width: 180px; height: 180px;">
+                    </div>
+                    <div class="col-sm-10 col-md-10 col-lg-10">
+                         M. Tech.(AKTU Lucknow)
+                         <br> <b>Total Experience :</b>14 Years
+                        <br>
+                        <b>Areas of Specialization : </b>Neural Network and Signal Processing
+                        <br><b>Publications:</b> Journals:01<br> Conference: 01
+                    </div>
+                </div>
+            </li>
+            <li class="list-group-item">
+                <h3><b>Er. Ajeet Kumar Srivastava </b></h3>
+                <div class="row">
+                    <div class="col-sm-2 col-md-2 col-lg-2">
+                        <img src="http://csjmu.ac.in/wp-content/uploads/2021/06/ajeet_ec.jpeg" style="width: 180px; height: 180px;">
+                    </div>
+                    <div class="col-sm-10 col-md-10 col-lg-10">
+                        M.Tech(B.I.T. Mesara),PhD.(Pursuing HBTU Kanpur)
+                        <br> <b>Total Experience :</b>15 Years
+                        <br>
+                        <b>Areas of Specialization : </b>Digital Signal Processing
+                        <br><b>Publications:</b><br> Conference: 03
+                    </div>
+                </div>
+            </li>
+            <li class="list-group-item">
+                <h3><b>Er. Somesh Kr. Malhotra</b></h3>
+                <div class="row">
+                    <div class="col-sm-2 col-md-2 col-lg-2">
+                        <img src="http://csjmu.ac.in/wp-content/uploads/2021/06/somesh_ec.jpeg" style="width: 180px; height: 180px;">
+                    </div>
+                    <div class="col-sm-10 col-md-10 col-lg-10">
+                        AMIETE,MSc.(Electronics)UIET,CSJM,University,Kanpur),
+                       <br> M.Tech (AKTU,Lucknow). ,
+                        UGC-NET
+                        <br> <b>Total Experience :</b>17 Years
+                        <br>
+                        <b>Areas of Specialization : </b>Optical Network
+                        <br><b>Publications:</b><br> Conference: 01
+                    </div>
+                </div>
+            </li>
+            <li class="list-group-item">
+                <h3><b>Er. Parul Awasthi</b></h3>
+                <div class="row">
+                    <div class="col-sm-2 col-md-2 col-lg-2">
+                        <img src="http://csjmu.ac.in/wp-content/uploads/2021/06/Parul_ec.jpeg" style="width: 180px; height: 180px;">
+                    </div>
+                    <div class="col-sm-10 col-md-10 col-lg-10">
+                       M. Tech(MITS Gwalior), UGC-NET
+                       <br> <b>Total Experience :</b>16 Years
+                        <br>
+                        <b>Areas of Specialization : </b>Communication and Networking
+                        <br><b>Publications:</b> Journals: 01 <br> Conference: 03
+                    </div>
+                </div>
+            </li>
+            <li class="list-group-item">
+                <h3><b>Dr. Ajay tiwari </b></h3>
+                <div class="row">
+                    <div class="col-sm-2 col-md-2 col-lg-2">
+                        <img src="http://csjmu.ac.in/wp-content/uploads/2021/06/ajay_ec.jpeg" style="width: 180px; height: 180px;">
+                    </div>
+                    <div class="col-sm-10 col-md-10 col-lg-10">
+                        M. Sc.(Electronics) PhD.
+                        <br> <b>Total Experience :</b>19 Years
+                        <br>
+                        <b>Areas of Specialization : </b>solid state
+                        <br><b> Research Publications/ Presentation:</b> 06
+                    </div>
+                </div>
+            </li>
+            <li class="list-group-item">
+                <h3><b>Er. Amit Kumar Katiyar</b> </h3>
+                <div class="row">
+                    <div class="col-sm-2 col-md-2 col-lg-2">
+                        <img src="http://csjmu.ac.in/wp-content/uploads/2021/06/amit_ec.jpeg" style="width: 180px; height: 180px;">
+                    </div>
+                    <div class="col-sm-10 col-md-10 col-lg-10">
+                         M.Sc (Electronics),M. Tech (HBTI Kanpur)
+                         <br> <b>Total Experience :</b>17 Years
+                        <br>
+                        <b>Areas of Specialization : </b>Optical Fibre Communication
+                        <br><b>Publications:</b> Conference:03
+                    </div>
+                </div>
+            </li>
+            <li class="list-group-item">
+                <h3><b>Er. Preeti Singh</b> </h3>
+                <div class="row">
+                    <div class="col-sm-2 col-md-2 col-lg-2">
+                        <img src="http://csjmu.ac.in/wp-content/uploads/2021/06/preeti_ec.jpeg" style="width: 180px; height: 180px;">
+                    </div>
+                    <div class="col-sm-10 col-md-10 col-lg-10">
+                        M.Sc (Electronics), M.Tech(Tezpur University)
+                        <br> <b>Total Experience :</b>8 Years
+                        <br>
+                        <b>Areas of Specialization : </b> Digital Design & technology/Antenna Design
+                        <br><b>Publications:</b> Conference:02
+                    </div>
+                </div>
+            </li>
+            <li class="list-group-item">
+                <h3><b>Er. Ompal</b> </h3>
+                <div class="row">
+                    <div class="col-sm-2 col-md-2 col-lg-2">
+                        <img src="http://csjmu.ac.in/wp-content/uploads/2021/06/ompal_ec.jpeg" style="width: 180px; height: 180px;">
+                    </div>
+                    <div class="col-sm-10 col-md-10 col-lg-10">
+                        Ph.D (Pursuing), M.Tech (MMMMUT Gorakhpur)
+                        <br> <b>Total Experience :</b>8 Years
+                        <br>
+                        <b>Areas of Specialization : </b> Digital System
+                        <br><b>Publications:</b> Conference:02 <br> Journals:02
+                    </div>
+                </div>
+            </li>
+          
+        </ul>
+    </div>
+    <br>
+    <br>
+
+    <footer class="footer-distributed">
+
+        <div class="footer-left">
+
+            <h3>E-<span>College</span></h3>
+
+            <p class="footer-links">
+                <a href="#" class="link-1">Home</a>
+
+                <a href="#">Blog</a>
+
+                
+
+                <a href="#">About</a>
+
+                <a href="#">Faq</a>
+
+                <a href="#">Contact</a>
+            </p>
+
+            <p class="footer-company-name" style="color: white;">Company © 2022</p>
+        </div>
+
+        <div class="footer-center">
+
+            <div>
+                <i class="fa fa-map-marker"></i>
+                <p><span>UIET CSJM University</span> Kalyanpur, Kanpur</p>
+            </div>
+
+            <div>
+                <i class="fa fa-phone"></i>
+                <p>+919999999999</p>
+            </div>
+
+            <div>
+                <i class="fa fa-envelope"></i>
+                <p><a href="mailto:support@company.com">support@company.com</a></p>
+            </div>
+
+        </div>
+
+        <div class="footer-right">
+
+            <p class="footer-company-about">
+                <span>About the company</span>
+                Lorem ipsum dolor sit amet, consectateur adispicing elit. Fusce euismod convallis velit, eu auctor lacus
+                vehicula sit amet.
+            </p>
+
+            <div class="footer-icons">
+
+                <a href="#"><i class="fa fa-facebook"></i></a>
+                <a href="#"><i class="fa fa-twitter"></i></a>
+                <a href="#"><i class="fa fa-linkedin"></i></a>
+                <a href="#"><i class="fa fa-github"></i></a>
+
+            </div>
+
+        </div>
+
+    </footer>
+
+
+</body>
+</html>

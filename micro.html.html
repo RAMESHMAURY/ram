@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>E-College</title>
+	<!----css file link-->
+	<link rel="stylesheet" type="text/css" href="css/java_programming.css">
+
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+	<!-- jQuery library -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<!-- Latest compiled JavaScript -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+
+	<!----Linking google fonts-->
+	<link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Rubik" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Assistant" rel="stylesheet"> 
+
+	<!----font-awsome start-->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+		<!------Navigation bar ends ---->
+	<nav class="navbar navbar-inverse navbar-fixed-top" style="height: 80px;">
+		<div class="container">
+			<div class="navbar-header">
+				<!------Responsive Button---->
+				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navi">
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+
+
+				</button>
+
+				<h1 style="color: white;margin-top: 10px;" id="myhead">E-College</h1>
+			</div>
+			<div class="collapse navbar-collapse" id="navi">
+                 <!------Navigation menus starts---->
+				<ul class="nav navbar-nav navbar-right">
+					<li> <a href="">Home</a></li>
+					<li> <a href="">Our Service</a></li>
+					<li> <a href="">Works</a></li>
+					<li> <a href="">Team</a></li>
+					<li> <a href="">About</a></li>
+					<li> <a href="">Carrier</a></li>
+					<!-- <li> <a href="" id="our-location" class="btn-success" data-target="#mymodal" data-toggle="modal">Login/Signup</a></li> -->
+				</ul>
+	                 <!------Navigation menus ends---->
+			</div>
+		</div>
+	</nav>
+
+		<!------Navigation bar ends ---->
+
+
+		 <!------Side bar start---->
+
+
+	<div class="sidemenu" id="sidebarleftmenu">
+		<ul class="sidemenulist">
+			<li><a href="" class="crossbutton" onclick="closesidemenu()">&times;</a></li>
+			<li style="background-color:#c9e265;"><a href="">Micro-processor - Home</a></li>
+			<li><a href="">Micro-processor - Overview</a></li>
+			<li><a href="">Micro-processor - Environment Setup</a></li>
+			<li><a href="">Micro-processor - Architecture</a></li>
+			<li><a href="">Micro-processor - Application Components</a></li>
+			<li><a href="">Micro-processor - Hello World Example</a></li>
+			<li><a href="">Micro-processor - Resources</a></li>
+			<li><a href="">Micro-processor -  Activities</a></li>
+			<li><a href="">Micro-processor - Services</a></li>
+			<li><a href="">Micro-processor - Broadcast Receivers</a></li>
+			<li><a href="">Micro-processor - Content Providers</a></li>
+			<li><a href="">Micro-processor - Fragments</a></li>
+			<li><a href="">Micro-processor - Intents/Filters</a></li>
+			<li><a href="">Micro-processor - User Interface</a></li>
+			<li><a href="">Micro-processor - UI Layouts</a></li>
+			<li><a href="">Micro-processor - UI Controls</a></li>
+			<li><a href="">Micro-processor - Event Handling</a></li>
+			<li><a href="">Micro-processor - Styles and Themes</a></li>
+			
+
+
+
+		</ul>
+	</div>
+
+	 <!------Side bar ends---->
+
+ 		<!------java main content starts ---->
+
+	<div id="mainpagecontent">
+		<div class="title-image">
+			<img src="anand.jpg" style="margin-left: 300px; height: 240px;width: 200px;"><br>
+			<h1>  &emsp; &emsp;  &emsp; &emsp; Er.Anand Kumar Gupta</h1>
+
+		</div>
+		<div class="content">
+		<h4 style="font-family: 'Assistant', sans-serif;" class="content">
+			<h3 class="text-center" style="color:#c9e265;">Microprocessor - Introduction</h3><br>
+			<p style="color: aliceblue;">Microprocessor is a controlling unit of a micro-computer, fabricated on a small chip capable of performing ALU (Arithmetic Logical Unit) operations and communicating with the other devices connected to it.
+
+			Microprocessor consists of an ALU, register array, and a control unit. ALU performs arithmetical and logical operations on the data received from the memory or an input device. Register array consists of registers identified by letters like B, C, D, E, H, L and accumulator. The control unit controls the flow of data and instructions within the computer.</p>
+
+				<br><h3 style="font-family: 'Rubik', sans-serif; font-style: bold; color:#c9e265;" class="text-center">Audience</h3><br>
+				<p style="color: aliceblue;">This tutorial has been prepared for the beginners to help them understand basic Micro-processor. After completing this tutorial you will find yourself at a moderate level of expertise in Micro-processor from where you can take yourself to next levels.</p>
+
+				<br><h3 class="text-center" style="font-style: bold;color:#c9e265;">Prerequisites</h3><br>
+				<p style="color: aliceblue;">Micro-processor is based  so if you have basic understanding on Micro-processor then it will be a fun to learn Micro-processor.</p>
+
+		</h4>
+		</div>
+		<button id="btn_next" style="background-color: #c9e265; color:white">Next</button>
+	</div>
+
+
+	<!------java main content starts ---->
+
+
+<!-- 	<script type="text/javascript">
+		
+		function opensidemenu()
+		{
+			document.getElementById('sidebarleftmenu').style.width='250px';
+			document.getElementById('mainpagecontent').style.marginLeft='250px';
+		}
+
+		function closesidemenu()
+		{
+			document.getElementById('sidebarleftmenu').style.width='0';
+			document.getElementById('mainpagecontent').style.marginLeft='0px';			
+		}
+
+	</script>
+ -->
+</body>
+</html>
