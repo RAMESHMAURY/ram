@@ -214,7 +214,8 @@ CREATE TABLE `login` (
   `id` int(255) NOT NULL,
   `username` varchar(255) DEFAULT NULL,
   `password` varchar(255) DEFAULT NULL,
-  `email` varchar(255) DEFAULT NULL
+  `email` varchar(255) DEFAULT NULL,
+  `usertype` varchar(255) DEFAULT 'Student'
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
@@ -397,6 +398,7 @@ CREATE TABLE `users` (
   `name` varchar(255) NOT NULL,
   `password` int(255) NOT NULL,
   `email` varchar(255) NOT NULL,
+  `subject` varchar(255) DEFAULT NULL,
   `img` varchar(255) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
