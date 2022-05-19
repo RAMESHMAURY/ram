@@ -1,15 +1,10 @@
 <?php
+session_start();
 
 if (!isset($_SESSION['username'])) {
 	header('location:login.php');
-	# code...
-
-
-
-
-	
+	# code...	
 }
-
-print($_SESSION['username']);
-
+$page=$_SESSION['page'];
+header($page);
 ?>

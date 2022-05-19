@@ -31,8 +31,11 @@ else
   		
   	}else{
 		$_SESSION['username']=$name;
-		  if($res['usertype']=='Teacher') header('location:teachers.php');
-		  else header('location:index.php');
+		$page=$res['page'];
+		$loc="location:";
+		$location=$loc.$page;
+		$_SESSION['page']=$page;
+		header($location);
 	  }
  }
  else

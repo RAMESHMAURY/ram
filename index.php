@@ -95,7 +95,9 @@ if (!isset($_SESSION['username'])) {
 		scroll-behavior: smooth;
 	}
 
-
+	footer-icons{
+		color: #000;
+	}
 	</style>
 
 </head>
@@ -219,7 +221,7 @@ if (!isset($_SESSION['username'])) {
 
          <!---Our Services Section Start------->
 
-         <br><br>
+         <!-- <br><br> -->
          <div class="container-fluid servicebody" id="myservice_section">
          <div class="service-are" id="service">
          	<div class="row">
@@ -282,8 +284,8 @@ if (!isset($_SESSION['username'])) {
          				</p>
          			</div>
          		</div>
- -->
-         		<!-- <div class="col-md-4 col-sm-6 col-xs-12">
+
+         		<div class="col-md-4 col-sm-6 col-xs-12">
          			<div class="service-wrap text-center">
          				<div class="service-icon">
          					<i class="fa fa-laptop"></i>
@@ -294,8 +296,8 @@ if (!isset($_SESSION['username'])) {
          				</p>
          			</div>
          		</div>
- -->
-         		<!-- <div class="col-md-4 col-sm-6 col-xs-12">
+
+         		<div class="col-md-4 col-sm-6 col-xs-12">
          			<div class="service-wrap text-center">
          				<div class="service-icon">
          					<i class="fa fa-user"></i>
@@ -304,8 +306,8 @@ if (!isset($_SESSION['username'])) {
          				<p>
          					This is our series these are the services provided by us <br>these are the services provided by us
          				</p>
-         			</div>
-         		</div> -->
+         			</div> -->
+         		</div>
          	</div>
          </div>
      </div>
@@ -339,8 +341,8 @@ if (!isset($_SESSION['username'])) {
 
 					<div class="col-md-3 col-sm-3 col-xs-3">
 						<div class="img-wrapper">
-							<a href="img/Digitalcomm.png" style="width: 800px; height: 300px; padding-left: 20%; padding-right: 20%;"  title="this is a sky image">
-								<img src="img/Digitalcomm.png" style="width: 800px; height: 300px; padding-left: 20%; padding-right: 20%;" class="img-responsive">
+							<a href="DigitalSystem.jpeg" style="width: 800px; height: 300px; padding-left: 20%; padding-right: 20%;"  title="this is a sky image">
+								<img src="DigitalSystem.jpeg" style="width: 800px; height: 300px; padding-left: 20%; padding-right: 20%;" class="img-responsive">
 							</a>
 							
 						</div>
@@ -428,7 +430,7 @@ if (!isset($_SESSION['username'])) {
 
 			<!-- introduction video section starts -->
 
-		<!-- 	<br><br><br><br>
+		 	<br><br><br><br>
 
 		<section class="header7 cid-rjrjygOfd1" id="header7-3">
 
@@ -442,20 +444,24 @@ if (!isset($_SESSION['username'])) {
 		                </h1>
 		                <div class="mbr-section-text mbr-white pb-3">
 		                    <p class="mbr-text mbr-fonts-style display-5">
-		                        Intro with background color, paddings and a video on the right. Mobirise helps you cut down development time by providing you with a flexible website editor with a drag and drop interface.
+		                        Intro with background color, paddings and a video on the right. Mobirise helps you cut down development time by providing you with a flexible elearning website editor with a drag and drop interface.
 		                    </p>
 		                </div>
 		                <div class="mbr-section-btn">
-		                        <a class="btn btn-md btn-primary display-4" href="https://mobirise.co">LEARN MORE</a>
-		                        <a class="btn btn-md btn-white-outline display-4" href="https://mobirise.co">LIVE DEMO</a>
+		                        <a class="btn btn-md btn-primary display-4" href="http://csjmu.ac.in/uiet-kanpur/departments/electronics-and-communication-engineering/">LEARN MORE</a>
+		                        <a class="btn btn-md btn-white-outline display-4" href="https://en.wikipedia.org/wiki/Electronic_engineering">LIVE DEMO</a>
 		                </div>
 		            </div>
 
-		            <div class="mbr-figure" style="width: 100%;"><iframe class="mbr-embedded-video" src="https://www.youtube.com/embed/uNCr7NdOJgw?rel=0&amp;amp;showinfo=0&amp;autoplay=0&amp;loop=0" width="1280" height="720" frameborder="0" allowfullscreen></iframe></div>
+		            <!-- <div class="mbr-figure" style="width: 100%;"><iframe class="mbr-embedded-video" src="https://www.youtube.com/embed/uNCr7NdOJgw?rel=0&amp;amp;showinfo=0&amp;autoplay=0&amp;loop=0" width="1280" height="720" frameborder="0" allowfullscreen></iframe></div> -->
+
+						<!-- <iframe width="100%" height="500" src="https://www.youtube.com/embed/iMhLdm6xrDM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> -->
+
+							<iframe width="100%" height="400" src="https://www.youtube.com/embed/aSFJ1c6mAUc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 		        </div>
     	</div>
-		</section> -->
+		</section>
 
 
   
@@ -471,13 +477,16 @@ if (!isset($_SESSION['username'])) {
 
 			<!---Our Team Section Start------->
 			
-			<!-- <style>
+			 <style>
 			.container{
 			
 				
 				grid-template-columns:repeat(4,1fr) ;
+
 			}
-				</style> -->
+			 
+			
+				</style>
 			
 			<br><br><br>
 			<div class="container text-center" id="our-members">
@@ -493,7 +502,7 @@ if (!isset($_SESSION['username'])) {
 					<div class="col-md-12">
 						<div id="team-memebers" class="owl-carousel owl-theme">
 							<div class="team-member text-center">
-								<img src="img/adarsh1.jpg" class="img-responsive">
+								<img src="Ramesh1.jpg" class="img-responsive">
 								<div class="team-member-info text-center">
 									<h4 class="team-member-name">Ramesh Maurya</h4>
 									<h4 class="team-member-designation">Web Developer</h4>
@@ -534,7 +543,7 @@ if (!isset($_SESSION['username'])) {
 							</div>
                                      <div class="team-member text-center">
 
-								<img src="img/vineet.jpg" class="img-responsive"> 
+								<img src="vineet1.jpg" class="img-responsive" style="height: 340px;"> 
 								<!-- <img src ="shubham.jpg" class="img-responive"> -->
 								<div class="team-member-info text-center">
 									<h4 class="team-member-name">Vineet Kumar Jaiswal</h4>

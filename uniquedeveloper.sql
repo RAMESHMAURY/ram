@@ -215,7 +215,7 @@ CREATE TABLE `login` (
   `username` varchar(255) DEFAULT NULL,
   `password` varchar(255) DEFAULT NULL,
   `email` varchar(255) DEFAULT NULL,
-  `usertype` varchar(255) DEFAULT 'Student'
+  `page` varchar(255) DEFAULT 'index.php'
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --

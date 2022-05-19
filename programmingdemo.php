@@ -138,7 +138,7 @@ ul, ol {
 
 			<!---Login Start------->
 
-			<!-- <div class="modal fade modal-dialog-centered" id="mymodal">
+			 <div class="modal fade modal-dialog-centered" id="mymodal">
 				<div class="modal-dialog ">
 					<div class="modal-content">
 						<h3 id="login-heading">Login</h3>
@@ -179,8 +179,8 @@ ul, ol {
 						
 				</div>
 			</div>
-		</div>
- -->
+		</div> -->
+ 
          <!---Login Ends------->
 
 
